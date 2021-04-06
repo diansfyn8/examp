@@ -1,0 +1,27 @@
+
+
+<div class="navbar" id="myTopnav">
+
+	<%= link_to 'Beranda', root_path %>  
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+  <%= link_to 'Tentang',  articles_about_path, class:'right' %>
+  <%= link_to 'Artikel',  articles_artikel_path, class:'right' %>
+  <%= link_to 'Poto',  articles_gallery_path, class:'right' %>
+  
+ 
+
+</div>
+
+<script>
+	function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
